@@ -32,11 +32,12 @@ nav a {
 	nav ul {
 		position: absolute;
 		flex-direction: column;
-		background-color: gray;
+		background-color: rgb(59, 59, 59);
 		top: 35px;
 		min-width: 50%;
 		min-height: 75vh;
 		transition: all 0.5s ease-in-out;
+    padding-top: 50px;
 	}
 
 	#closed {
