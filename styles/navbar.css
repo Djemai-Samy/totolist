@@ -1,0 +1,48 @@
+nav {
+	position: relative;
+	background-color: rgb(49, 49, 49);
+	display: flex;
+	padding: 10px;
+}
+
+nav img {
+	display: none;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	margin: 0 20px;
+}
+
+@media (max-width: 800px) {
+	nav img {
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
+
+	nav ul {
+		position: absolute;
+		flex-direction: column;
+		background-color: gray;
+		top: 35px;
+		min-width: 50%;
+		min-height: 75vh;
+		transition: all 0.5s ease-in-out;
+	}
+
+	#closed {
+		left: -100%;
+	}
+	#open {
+		left: 0;
+	}
+}
