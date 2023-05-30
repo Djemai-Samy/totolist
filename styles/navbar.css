@@ -3,6 +3,7 @@ nav {
 	background-color: rgb(49, 49, 49);
 	display: flex;
 	padding: 10px;
+  align-items: center;
 }
 
 nav img {
@@ -15,6 +16,9 @@ nav ul {
 
 nav li {
 	list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
