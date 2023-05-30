@@ -3,6 +3,7 @@
 // connecter a la BD
 $connect = mysqli_connect("localhost", 'root', '', 'todolist');
 
+
 // Préparezr la requete
 $requete = mysqli_prepare($connect, "INSERT INTO users (email, password) VALUES (?, ?)");
 

@@ -37,7 +37,7 @@ nav a {
 		min-width: 50%;
 		min-height: 75vh;
 		transition: all 0.5s ease-in-out;
-    padding-top: 50px;
+    padding: 50px;
 	}
 
 	#closed {
@@ -46,4 +46,21 @@ nav a {
 	#open {
 		left: 0;
 	}
+
+  nav li{
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.284);
+    transition: all 0.2s ease-in-out;
+  }
+  nav li:hover, nav a:hover{
+    border-bottom: 1px solid rgb(60, 149, 238);
+    color: rgb(57, 142, 227);
+    transition: all 0.2s ease-in-out;
+  }
+  nav a{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+  }
 }
