@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  $isLogin = isset($_SESSION['id']);
+?>
 <link rel="stylesheet" href="./styles/navbar.css">
 
 <nav>
@@ -7,11 +11,25 @@
 
   <ul id="closed">
     <li>
-      <a href="/index.php">Acceuil</a>
+      <a href="/index.php">Accueil</a>
     </li>
     <li>
-      <a href="/connexion.php">Connexion</a>
+      <?= $isLogin ? 
+        "<a href='/profil.php'>Profil</a>" : 
+        "<a href='/connexion.php'>Connexion</a>"; 
+      ?>
     </li>
+    <?php
+      if($isLogin){
+        echo "
+        <li>
+          <form action='/api/logout'>
+            <button>Se déconnecter</button>
+          </form>
+        </li>";
+      }
+    ?>
+
   </ul>
 </nav>
 
