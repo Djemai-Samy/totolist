@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 
 // Dans le cas ou l'email et le mot passe ne sont fournis
 if (!isset($_POST['email']) or !isset($_POST['password']) or $_POST['email'] == "" or $_POST['password'] == "") {
@@ -31,3 +33,10 @@ if ($passwordInput != $user['password']) {
 	header('Location: /connexion.php?error=connexion');
 	exit;
 }
+
+// Remplir la session avec les données pour mémoriser l'utilisateur sur le long terme
+$_SESSION['email'] = $user['email'];
+$_SESSION['id'] = $user['id'];
+
+// Rédiriger vers la page de de profil
+header('Location: /profil.php');
