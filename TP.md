@@ -22,3 +22,14 @@
    2. Vous aller créer la requete pour ajouter le user dans la base de données
    3. Executer la requete
    4. Rediriger l'utilisateur vers la page de connexion
+
+
+## Connexion
+
+1. Créer un formulaire pour la connexion: email, password.
+2. Le formulaire envoi les données vers un fichier: /api/login.php
+3. Dans login.php:
+   1. Récuperer l'utilisateur depuis la base de données en utilisant sont email.
+   2. Cas ou l'utilisateur n'existe pas, rediriger vers connexion.php
+   3. Cas ou il existe: Tester si le mot de passe de la base donnée est égal a celui fournit dans le formulaire.
+   4. Si mot de passe correct, rediriger vers page d'accueil.
