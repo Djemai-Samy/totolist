@@ -39,6 +39,13 @@
     <input type="text" placeholder="Entrez votre mot de passe" name="password">
     <input type="text" placeholder="Confirmer votre mot de passe" name="confirmPassword">
     <button>Valider</button>
+    <p class="error">
+      <?php
+        if(isset($_GET["error"]) and $_GET["error"] == "inscription"){
+          echo "Email existe déja, connectez-vous!";
+        }
+      ?>
+    </p>
   </form>
 </body>
 

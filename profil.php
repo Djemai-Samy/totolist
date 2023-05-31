@@ -15,6 +15,14 @@
       ?>
   </header>
   <h1>Page de profil</h1>
+
+  <section>
+    <h2>Liste de vos tache</h2>
+    <form action="/api/addtodo.php">
+      <input type="text" placeholder="Ajoutez une tache" name="tache" />
+      <button>Ajouter</button>
+    </form>
+  </section>
 </body>
 
 </html>
