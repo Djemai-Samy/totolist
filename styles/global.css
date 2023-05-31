@@ -33,3 +33,49 @@ input{
   font-size: 15px;
   margin: 0;
 }
+
+ul{
+  padding: 0;
+}
+
+section{
+  max-width: 600px;
+  margin: auto;
+}
+.todo-container{
+  list-style: none;
+  background-color: rgb(51, 51, 51);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px -1px #0000004c; 
+  box-shadow: 0px 0px 6px -1px #0000004c;
+  position: relative;
+}
+
+.todo-date{
+  font-size: 0.8em;
+  text-align: right;
+  color: rgb(202, 202, 202);
+}
+
+.done{
+  border-bottom:solid 1px green;
+}
+.not-done{
+  border-bottom:solid 1px rgb(195, 97, 17);
+}
+
+.remove-image{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.remove-image:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}

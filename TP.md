@@ -53,7 +53,6 @@
 
 ### Ajouter des taches
 
-
 1. Dans la page de profil, ajouter un formulaire envoyer les données: /api/addtodo.php:
    1. input pour la tache
    2. Un bouton pour valider et ajouter la tache.
@@ -73,3 +72,20 @@
    6. Rédiriger vers la page de profil.
 
 ---
+
+### Afficher les taches
+
+Dans la page de profil
+
+1. Connecter la base données.
+2. Créer la requete pour récuperer les taches de l'tulisateur en utilisant son identifiant dans la SESSION.
+3. Executer la requete pour avoir le resultat
+4. Utiliser fetch pour avoir le tableau associatifs representant les taches
+5. Faire une boucle sur le tableau pour afficher les tache dans le HTML.
+
+## A faire
+
+1. Tester si la tache est vide quand il ajoute une tache
+2. Ajouter la possibilité de valider une tache.
+3. Ajouter un bouton pour tout supprimer
+4. Donner la possibilité a l'utilisateur d'avoir un image de profil.
